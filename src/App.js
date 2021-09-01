@@ -6,6 +6,7 @@ import Chars from "./components/Chars";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Chat from "./components/Chat";
+import Merch from "./components/Merch";
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
 
         <Route exact path="/chat">
           <Chat />
+        </Route>
+
+        <Route exact path="/merch">
+          <Merch />
         </Route>
 
         <Route exact path="*">

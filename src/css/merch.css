@@ -1,0 +1,176 @@
+/* Showcase */
+.showcase {
+  padding-top: 7vh;
+  padding-bottom: 4vh;
+  background: #fff;
+  width: 100%;
+}
+.eventCarousel img {
+  height: 50vh;
+  z-index: -1;
+  border-radius: 8px;
+}
+.eventCarousel h1,
+.eventCarousel h2 {
+  text-align: left;
+  padding: 0 2vw;
+  color: #fff;
+  font-weight: 400;
+}
+.eventCarousel h1 {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.eventCarousel h2 {
+  font-size: 1.8vw;
+}
+.control-dots {
+  margin: 0 !important;
+  bottom: 8.4vh !important;
+}
+.showcase .dot {
+  width: 12px !important;
+  height: 12px !important;
+  background: #c4c4c4 !important;
+  box-shadow: none !important;
+  transition: all 0.3s !important;
+}
+.showcase .dot:hover {
+  background: #3f64c086 !important;
+  box-shadow: none !important;
+}
+.showcase .dot.selected {
+  background: #4678f9 !important;
+}
+.event-banner-text {
+  position: relative;
+  bottom: 0 !important;
+  transform: translateY(-7.5vw);
+  padding-bottom: 3vh;
+}
+.imgShadow {
+  position: absolute;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+  box-shadow: 0px -14vh 4vh -2vh rgba(0, 0, 0, 0.67) inset;
+  -webkit-box-shadow: 0px -14vh 4vh -2vh rgba(0, 0, 0, 0.67) inset;
+  -moz-box-shadow: 0px -14vh 4vh -2vh rgba(0, 0, 0, 0.67) inset;
+}
+.control-arrow {
+  height: 80%;
+}
+.control-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f054" !important;
+  font-size: 2.4vw;
+}
+.control-prev::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f053" !important;
+  font-size: 2.4vw;
+}
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  border: none !important;
+}
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  padding: 0 1vw !important;
+  background: none !important;
+}
+
+/* MERCH */
+.merch-hold h1 {
+  text-align: center;
+  margin-bottom: 4vh;
+  font-size: 3vw;
+  font-weight: 700;
+  color: var(--col);
+}
+.merch .disc-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.merch h3 {
+  text-align: center;
+  margin: 1vh 0;
+  font-size: 1.4vw;
+  margin-bottom: 2vh;
+  color: var(--text);
+  font-weight: 400;
+}
+.the {
+  margin-bottom: 10vh;
+}
+
+@media (max-width: 1024px) {
+  .eventCarousel img,
+  .imgShadow {
+    height: 30vh;
+  }
+  .event-banner-text {
+    transform: translateY(-10vh);
+  }
+  .control-dots {
+    bottom: 4vh !important;
+  }
+  .control-next::before,
+  .control-prev::before {
+    font-size: 5vw;
+  }
+  .eventCarousel h1 {
+    font-size: 3.6vw;
+    padding: 0 4vw;
+  }
+  .eventCarousel h2 {
+    font-size: 2.8vw;
+    padding: 0 4vw;
+  }
+  .merch-hold h1 {
+    font-size: 5vw;
+  }
+  .merch h3 {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+}
+@media (max-width: 640px) {
+  .carousel.carousel-slider .control-arrow {
+    height: 18vh;
+  }
+  .eventCarousel img,
+  .imgShadow {
+    height: 20vh;
+  }
+  .event-banner-text {
+    transform: translateY(-8vh);
+  }
+  .control-dots {
+    bottom: 2vh !important;
+  }
+  .control-next::before,
+  .control-prev::before {
+    font-size: 6vw;
+  }
+  .eventCarousel h1 {
+    font-size: 5vw;
+    padding: 0 5vw;
+  }
+  .eventCarousel h2 {
+    font-size: 3.4vw;
+    padding: 0 5vw;
+  }
+  .merch-hold h1 {
+    font-size: 7vw;
+  }
+  .merch h3 {
+    font-size: 5vw;
+    margin-bottom: 1vh;
+  }
+}

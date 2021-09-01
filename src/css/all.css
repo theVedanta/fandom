@@ -57,6 +57,7 @@ a {
   border-radius: 10px;
   position: relative;
   transition: all 0.3s;
+  display: inline-block;
   border: 2px solid var(--col);
 }
 .btn:hover {
