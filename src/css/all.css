@@ -1,0 +1,303 @@
+:root {
+  --col: #7300e5;
+  --text: #464646;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+.root {
+  width: 100vw;
+  overflow-x: hidden;
+}
+img {
+  object-fit: cover;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+textarea {
+  resize: vertical;
+}
+button {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  padding: 0 8vw;
+}
+
+.btn {
+  font-size: 1vw;
+  padding: 1.6vh 3vw;
+  background: var(--col);
+  font-weight: 400;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s;
+  border: 2px solid var(--col);
+}
+.btn:hover {
+  background: transparent;
+  color: var(--col);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3vh !important;
+  padding-bottom: 3vh !important;
+  z-index: 2;
+}
+nav .logo,
+nav .links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 8%;
+}
+nav .logo h1 {
+  font-size: 1.6vw;
+  margin-left: 1vw;
+  font-weight: 400;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+nav .links {
+  justify-content: flex-end;
+  transition: all 0.3s;
+}
+nav a,
+nav button {
+  margin-left: 4vw;
+  font-size: 1vw;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+nav button {
+  margin-left: 3vw;
+}
+.ham {
+  padding: 2vh 2vw;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
+.ham .line {
+  width: 4.6vw;
+  height: 3px;
+  background: #29313d;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.2s;
+}
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: #29313d;
+  border-radius: inherit;
+  transition: inherit;
+}
+.line::before {
+  top: -0.9vh;
+}
+.line::after {
+  top: 0.9vh;
+}
+
+.ham-active .line {
+  background: transparent;
+}
+.ham-active .line::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+.ham-active .line::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  background: var(--col);
+}
+footer > * {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+}
+.foot-logo {
+  justify-content: flex-start;
+  align-items: center;
+}
+.foot-logo img {
+  width: 50%;
+}
+.foot-socials {
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2vw;
+}
+.foot-socials a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-details {
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+}
+.foot-details p {
+  color: #fff;
+  font-weight: 400;
+  margin: 0.4vh 0;
+  font-size: 1vw;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 6vw;
+  }
+  nav .logo img {
+    width: 12%;
+  }
+  nav .logo h1 {
+    font-size: 2.4vw;
+    margin-left: 2vw;
+  }
+  nav .links {
+    position: fixed;
+    width: 45vw;
+    height: 100vh;
+    background: #fff;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate3d(100%, 0, 0);
+  }
+  nav .links-active {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 100px #29313d56;
+  }
+  nav .links a,
+  nav .links button {
+    color: #000 !important;
+    font-size: 3vw;
+    margin: 2vh 0;
+  }
+  .ham {
+    display: inline-block;
+  }
+
+  footer > * {
+    height: 20vh;
+  }
+  .foot-logo img {
+    width: 70%;
+  }
+  .foot-socials {
+    padding: 0 !important;
+    font-size: 3.4vw;
+  }
+  .foot-details p {
+    margin: 0.4vh 0;
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 640px) {
+  nav .logo img {
+    width: 20%;
+  }
+  nav .logo h1 {
+    font-size: 4vw;
+    margin-left: 3vw;
+  }
+  nav .links {
+    width: 70vw;
+  }
+  nav .links-active {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 100px #29313d56;
+  }
+  nav .links a,
+  nav .links button {
+    color: #000 !important;
+    font-size: 5vw;
+  }
+  .ham {
+    display: inline-block;
+  }
+  .ham .line {
+    width: 6.6vw;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  footer > * {
+    height: 18vh;
+  }
+  .foot-logo {
+    justify-content: center;
+    height: 12vh;
+  }
+  .foot-logo img {
+    width: 40%;
+  }
+  .foot-socials {
+    padding: 0 12vw !important;
+    font-size: 7vw;
+    height: 4vh;
+  }
+  .foot-details {
+    text-align: center;
+    align-items: center;
+  }
+  .foot-details p {
+    margin: 0.6vh 0;
+    font-size: 3.6vw;
+  }
+}

@@ -1,0 +1,143 @@
+.disc {
+  margin: 4vh 0;
+  margin-bottom: 8vh;
+}
+.view-disc {
+  font-size: 1.4vw;
+  color: var(--text);
+  display: inline-block;
+  margin-bottom: 4vh;
+}
+
+/* carousel */
+.owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.owl-item {
+  width: 24vw;
+  margin-right: 2vw;
+}
+.owl-prev,
+.owl-next {
+  display: none;
+}
+.disc-controls {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+.disc-controls button {
+  font-size: 2vw;
+  color: var(--text);
+  margin: 0 2vw;
+  transition: all 0.2s;
+}
+.disc-controls button:hover {
+  transform: scale(1.2);
+}
+.disc-card {
+  width: 24vw;
+  box-shadow: 0 10px 100px rgba(33, 34, 36, 0.144);
+  border-radius: 10px;
+}
+.disc-card img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px 10px 0 0;
+}
+.disc-card-content {
+  padding: 3vh 2vw;
+}
+.disc-card h1 {
+  font-size: 1.6vw;
+  font-weight: 700;
+  color: var(--col);
+}
+.disc-card p {
+  margin: 1.4vh 0;
+  font-weight: 400;
+  margin-bottom: 2.4vh;
+  font-size: 1vw;
+  color: var(--text);
+}
+.disc-card .btn {
+  padding: 1.2vh 1.8vw;
+  font-size: 0.8vw;
+}
+
+@media (max-width: 1024px) {
+  .view-disc {
+    font-size: 4vw;
+    margin-bottom: 1.6vh;
+  }
+  .owl-item {
+    margin-right: 30vw;
+  }
+  .disc-card {
+    width: 45vw;
+  }
+  .disc-card-content {
+    padding: 2vh 4vw;
+  }
+  .disc-card img {
+    height: 30vh;
+  }
+  .disc-card h1 {
+    font-size: 2.4vw;
+  }
+  .disc-card p {
+    font-size: 1.8vw;
+    margin: 1vh 0;
+  }
+  .disc-card .btn {
+    display: inline-block;
+    font-size: 2vw;
+    padding: 1vh 3vw;
+    margin-top: 1vh;
+  }
+  .disc-controls {
+    margin-top: 0;
+  }
+  .disc-controls button {
+    font-size: 4vw;
+    margin: 0 4vw;
+  }
+}
+@media (max-width: 640px) {
+  .view-disc {
+    font-size: 6vw;
+    margin-bottom: 2vh;
+  }
+  .owl-item {
+    margin-right: 58vw;
+  }
+  .disc-card {
+    width: 70vw;
+  }
+  .disc-card-content {
+    padding: 2vh 5vw;
+  }
+  .disc-card img {
+    height: 35vh;
+  }
+  .disc-card h1 {
+    font-size: 4vw;
+  }
+  .disc-card p {
+    font-size: 3vw;
+    margin: 0.7vh 0;
+  }
+  .disc-card .btn {
+    font-size: 3vw;
+    padding: 1vh 5vw;
+    margin-top: 1vh;
+  }
+  .disc-controls button {
+    font-size: 8vw;
+    margin: 0 10vw;
+  }
+}

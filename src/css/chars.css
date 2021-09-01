@@ -1,0 +1,145 @@
+header {
+  display: flex;
+  margin-bottom: 8vh;
+}
+header.container img {
+  width: 30%;
+  height: 30vh;
+  border-radius: 10px;
+}
+.head-content {
+  width: 70%;
+  padding-left: 4vw;
+  padding-top: 2vh;
+}
+header h1 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+header p {
+  padding-right: 14vw;
+  font-size: 1vw;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 3vh;
+}
+
+.char-heading {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 700;
+  color: var(--col);
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8vh;
+}
+.owl-item {
+  width: 22vw !important;
+}
+.char-card {
+  width: 22vw;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(33, 34, 36, 0.144);
+  opacity: 0.6;
+  transform: scale(0.7);
+  transition: all 0.3s;
+}
+.owl-item.active .char-card {
+  transform: scale(1);
+  opacity: 1;
+}
+.char-card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 40vh;
+}
+.char-card-content {
+  padding: 1vh 2vw;
+}
+.char-card h1 {
+  font-size: 1.4vw;
+  font-weight: 700;
+  margin-top: 2vh;
+}
+.char-card p {
+  font-size: 0.9vw;
+  margin: 2vh 0;
+  margin-top: 0.4vh;
+  color: var(--text);
+}
+.char-card .btn {
+  margin-bottom: 3vh;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+}
+.char-controls {
+  margin: 4vh 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.char-controls button {
+  font-size: 2vw;
+}
+
+@media (max-width: 1024px) {
+  header.container img {
+    width: 30%;
+    height: 20vh;
+  }
+  .head-content {
+    width: 70%;
+  }
+  header h1 {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+  header p {
+    padding-right: 0;
+    font-size: 1.6vw;
+    line-height: 2.6vh;
+  }
+
+  .char-heading {
+    font-size: 4vw;
+  }
+  .char-controls button {
+    font-size: 3.4vw;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+  }
+  header.container img {
+    width: 100%;
+    height: 20vh;
+  }
+  .head-content {
+    width: 100%;
+    padding: 0;
+    padding-top: 2vh;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 1vh;
+  }
+  header p {
+    text-align: center;
+    font-size: 2.8vw;
+    line-height: 2.6vh;
+  }
+
+  .char-heading {
+    font-size: 6vw;
+  }
+  .char-controls button {
+    font-size: 7vw;
+  }
+}
