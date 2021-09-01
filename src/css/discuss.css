@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 .owl-item {
-  width: 24vw;
+  width: 24vw !important;
   margin-right: 2vw;
 }
 .owl-prev,
@@ -75,7 +75,8 @@
     margin-bottom: 1.6vh;
   }
   .owl-item {
-    margin-right: 30vw;
+    width: 45vw !important;
+    margin-right: 5vw;
   }
   .disc-card {
     width: 45vw;
@@ -113,10 +114,11 @@
     margin-bottom: 2vh;
   }
   .owl-item {
-    margin-right: 58vw;
+    width: 85vw !important;
+    margin-right: 8vw;
   }
   .disc-card {
-    width: 70vw;
+    width: 85vw;
   }
   .disc-card-content {
     padding: 2vh 5vw;

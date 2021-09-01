@@ -19,21 +19,30 @@ const Nav = () => {
       <div className={hamActive ? "links links-active" : "links"}>
         <Link
           style={{ color: navColor }}
-          onClick={() => setNavColor("white")}
+          onClick={() => {
+            setNavColor("white");
+            setHam(false);
+          }}
           to="/"
         >
           Home
         </Link>
         <Link
           style={{ color: navColor }}
-          onClick={() => setNavColor("black")}
+          onClick={() => {
+            setNavColor("black");
+            setHam(false);
+          }}
           to="/discuss"
         >
           Discuss
         </Link>
         <Link
           style={{ color: navColor }}
-          onClick={() => setNavColor("black")}
+          onClick={() => {
+            setNavColor("black");
+            setHam(false);
+          }}
           to="/characters"
         >
           Characters

@@ -38,9 +38,6 @@ header p {
   justify-content: space-between;
   margin-bottom: 8vh;
 }
-.owl-item {
-  width: 22vw !important;
-}
 .char-card {
   width: 22vw;
   border-radius: 10px;
